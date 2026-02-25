@@ -1,0 +1,9 @@
+.mainViewContainer {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* lo deja arriba pero centrado */
+  min-height: 100vh;       /* ocupa toda la altura de la pantalla */
+  width: 100%;
+  padding: 2rem 1rem;      /* espacio para que no pegue a los bordes */
+  box-sizing: border-box;
+}

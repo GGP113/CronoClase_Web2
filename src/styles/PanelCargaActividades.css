@@ -1,0 +1,23 @@
+.PanelCargaActividades{
+    display: flex;
+    flex-direction: column; /* Asegura que el h2 esté encima del div */
+    align-items: center; /* Centra el contenido horizontalmente */
+    min-height: 100vh;       /* ocupa toda la altura de la pantalla */
+    width: 100%;
+    padding: 2rem 1rem;      /* espacio para que no pegue a los bordes */
+    box-sizing: border-box;
+    font-family: "Rhodium Libre", serif;
+}
+
+.PanelCargaActividades h2 {
+  text-align: center; /* Centra el texto del h2 */
+  margin-bottom: 1rem; /* Espaciado entre el h2 y el div */
+}
+
+.PanelCargaActividades > div {
+  display: flex;
+  justify-content: center; /* Centra los componentes horizontalmente */
+  align-items: center; /* Centra los componentes verticalmente */
+  gap: 1rem; /* Espaciado entre los componentes */
+}
+

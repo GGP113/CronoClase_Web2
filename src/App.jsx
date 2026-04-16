@@ -3,9 +3,9 @@
 import './App.css'
 
 import { MainView } from './pages/MainView'
-import { PanelCargaActividades } from './pages/PanelCargaActividades'
+import { PanelProfesor } from './pages/PanelProfesor'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import InicioSesion from './pages/InicioSesion'
+import { InicioSesion } from './pages/InicioSesion'
 
 
 
@@ -14,9 +14,11 @@ function App() {
 
   return (
 
-     <PanelCargaActividades/>
+    
+     <PanelProfesor/>
+     
 
-    //<PanelCargaActividades/>
+    
     
   )
 }

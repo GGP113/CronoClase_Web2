@@ -1,9 +1,8 @@
 import React from 'react'
 
-function LogInProfesor() {
+export function LogInProfesor() {
   return (
     <div>LogInProfesor</div>
   )
 }
 
-export default LogInProfesor

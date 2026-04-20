@@ -4,8 +4,11 @@ import { FormularioProfesor } from '../pages/FormularioProfesor'
 import { InicioSesion } from '../pages/InicioSesion'
 import { PanelCargaActividades } from '../pages/PanelCargaActividades'
 import { PanelProfesor } from '../pages/PanelProfesor'
+import { MainView } from '../pages/MainView'
+import { LogInEstudiante } from '../pages/LogInEstudiante'
+import { LogInProfesor } from '../pages/LogInProfesor'
 
-export const appRouter2 = [
+export let appRouter2 = [
     {
         path: "/",
         element: <App />
@@ -19,9 +22,16 @@ export const appRouter2 = [
         element: <FormularioProfesor />
     },
     {
-        path: "/inicio-sesion",
-        element: <InicioSesion />
+        path: "/inicio-sesion-estudiante",
+        element: <LogInEstudiante />
     },
+
+    {
+        path: "/inicio-sesion-profesor",
+        element: <LogInProfesor />
+    },
+
+
     {
         path: "/panel-carga-actividades",
         element: <PanelCargaActividades />
@@ -29,5 +39,8 @@ export const appRouter2 = [
     {
         path: "/panel-profesor",
         element: <PanelProfesor />
-    }
+    },
+
+    {path: "/calendario-estudiante",
+        element: <MainView />}
 ]

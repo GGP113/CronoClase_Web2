@@ -1,6 +1,7 @@
 import "../styles/CardProfesor.css";
 import CardProfesor from "../components/CardProfesor";
 import NavBar from "../components/NavBar";
+import NavBarProfesor from "../components/NavBarProfesor";
 import { Footer } from "../components/Footer";
 
 //Esto va a cambiar el visual para que se vean los grupos
@@ -9,7 +10,7 @@ import { Footer } from "../components/Footer";
 export function PanelProfesor() {
   return (
     <div className="page-container">
-      <NavBar />
+      <NavBarProfesor />
 
 
       <main className="panel-container">

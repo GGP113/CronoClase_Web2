@@ -10,7 +10,13 @@ import { getLocalStorage, removeLocalStorage } from "../helpers/local-storage";
 import { redirectAlert } from "../helpers/alerts";
 
 export default function NavBarEstudiante() {
-  let userEstudiante = JSON.parse(getLocalStorage("estudiante"));
+  const stored = getLocalStorage("estudiante");
+  let userEstudiante = null;
+  try {
+    userEstudiante = stored ? JSON.parse(stored) : null;
+  } catch (e) {
+    userEstudiante = null;
+  }
 
   function logOut() {
     removeLocalStorage("estudiante");
@@ -25,12 +31,12 @@ export default function NavBarEstudiante() {
   return (
     <nav className="navCalendar">
       <div className="nav-buttons">
-        <a href="#" className="nav-button">
+        <a href="/inicio-sesion-estudiante" className="nav-button">
           <img src={vistaEstudiantesImg} alt="Vista de Estudiantes" />
-          {userEstudiante.nombre}
+          {userEstudiante?.nombre ?? "Estudiante"}
         </a>
 
-        <a href="#" className="nav-button">
+        <a href="/materias" className="nav-button">
           <img src={panelCargaImg} alt="Panel de Carga" />
           Materias
         </a>

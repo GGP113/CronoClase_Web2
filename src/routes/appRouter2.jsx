@@ -7,6 +7,7 @@ import { PanelProfesor } from '../pages/PanelProfesor'
 import { MainView } from '../pages/MainView'
 import { LogInEstudiante } from '../pages/LogInEstudiante'
 import { LogInProfesor } from '../pages/LogInProfesor'
+import PageMaterias from '../pages/PageMaterias'
 
 export let appRouter2 = [
     {
@@ -31,7 +32,6 @@ export let appRouter2 = [
         element: <LogInProfesor />
     },
 
-
     {
         path: "/panel-carga-actividades",
         element: <PanelCargaActividades />
@@ -42,5 +42,8 @@ export let appRouter2 = [
     },
 
     {path: "/calendario-estudiante",
-        element: <MainView />}
+        element: <MainView />},
+
+    {path: "/panel-materias",
+        element: <PageMaterias/>}    
 ]

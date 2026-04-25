@@ -1,4 +1,5 @@
 import App from '../App'
+import PageMaterias from '../pages/PageMaterias'
 import FormularioEstudiante from '../pages/FormularioEstudiante'
 import { FormularioProfesor } from '../pages/FormularioProfesor'
 import { InicioSesion } from '../pages/InicioSesion'
@@ -11,7 +12,11 @@ import { LogInProfesor } from '../pages/LogInProfesor'
 export let appRouter2 = [
     {
         path: "/",
-        element: <App />
+        element: <PageMaterias />,
+    },
+    {
+        path: "/materias",
+        element: <PageMaterias />
     },
     {
         path: "/formulario-estudiante",

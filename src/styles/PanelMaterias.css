@@ -1,0 +1,163 @@
+/* Estilos para las tarjetas de materia y modal */
+.materia-card {
+  background-color: #f8f4ff;
+  border: 2px solid #493d9e;
+  border-radius: 12px;
+  padding: 18px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(73, 61, 158, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;      /* stretch to fill the grid cell */
+  box-sizing: border-box;
+}
+
+.materia-card h2 {
+  margin: 0;
+  color: #493d9e;
+  font-size: 1.25rem;
+}
+
+.materia-card {
+  min-height: 150px;
+}
+
+.materia-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.materia-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.materia-card h2 {
+  flex: 1 1 auto;
+  min-width: 0; /* allow text truncation inside flex */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.materia-desc {
+  margin: 8px 0 0 0;
+}
+
+.materia-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.materia-footer {
+  display: flex;
+  justify-content: center; /* center footer content horizontally */
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.materia-footer-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center; /* center the buttons inside the actions area */
+  flex-wrap: wrap;
+}
+
+.materia-footer-left {
+  display: none; /* hide left area to keep footer buttons centered */
+}
+
+.momentos {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.momento-btn {
+  background-color: #fff2af;
+  color: #493d9e;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 18px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.momento-btn:hover {
+  background-color: #493d9e;
+  color: #fff2af;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1200;
+}
+
+.modal {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  width: 90%;
+  max-width: 720px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.actividad {
+  display: grid;
+  grid-template-columns: 1fr 160px 1fr;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.actividad label {
+  color: #493d9e;
+  font-weight: 700;
+}
+
+.actividad input,
+.actividad select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Ensure buttons don't overflow their parent */
+.momento-btn,
+.btn-cargar {
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  .materia-card {
+    width: 100%;
+  }
+
+  .actividad {
+    grid-template-columns: 1fr;
+  }
+}

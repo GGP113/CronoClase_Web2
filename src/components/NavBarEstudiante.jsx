@@ -32,12 +32,12 @@ export default function NavBarEstudiante() {
   return (
     <nav className="navCalendar">
       <div className="nav-buttons">
-        <a href="#" className="nav-button">
+        <a href="/calendario-estudiante" className="nav-button">
           <img src={vistaEstudiantesImg} alt="Vista de Estudiantes" />
           {userEstudiante?.nombre ?? "Estudiante"}
         </a>
 
-        <a href="#" className="nav-button">
+        <a href="/panel-materias" className="nav-button">
           <img src={panelCargaImg} alt="Panel de Carga" />
           Materias
         </a>

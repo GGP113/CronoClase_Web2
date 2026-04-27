@@ -3,6 +3,7 @@ import NavBarEstudiante from "../components/NavBarEstudiante";
 import { Footer } from "../components/Footer";
 import InfoMateria from "../components/InfoMateria";
 import "../styles/PageMaterias.css";
+import BannerMaterias from "../components/BannerMaterias";
 
 export default function PageMaterias() {
 	const materias = [
@@ -17,6 +18,7 @@ export default function PageMaterias() {
 
 			<main className="page-materias-container">
 				<h1 className="page-title">Mis Materias.</h1>
+				<BannerMaterias />
 
 				<section className="materias-grid">
 					{materias.map((m) => (
